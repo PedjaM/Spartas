@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spartas</title>
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<link rel="stylesheet" href="css/leaflet-gesture-handling.min.css" type="text/css">
+		<script src="js/leaflet-gesture-handling.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Fira+Sans&display=swap" rel="stylesheet">		
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" type="text/css" href="Spartas.css">
+		<script src="https://kit.fontawesome.com/69aadd3252.js" crossorigin="anonymous"></script>
+		<script>
+
+
+		 $(document).ready(function(){
+			 $('[data-toggle="popover"]').popover();
+		 });
+
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mojNavbar" style="border: 5px solid black;"> 
+  		  				</button>
+  		  				<a href="#" class="navbar-brand" id="logo"><b>СПАРТАС</b></a>
+					</div>
+					<div class="collapse navbar-collapse" id="mojNavbar" style="overflow-y: visible">
+						<ul class="nav navbar-nav navbar-right" ;>
+							<li><a href="C:/Users/HP/Desktop/Spartas/Resursi/cenovnik.pdf" target="_blank">Ценовник</a></li>
+							
+							<li><a href="#" id="pop" data-toggle="popover" 
+								data-html="true" data-placement="bottom" data-content="<br> <p>Мобилни: 0658686166</p> <hr> 
+								<p id='mejl' data-toggle='modal' data-target='#mojModal'> Е-пошта: spartas@gmail.com</p>
+								<hr> <p>Адреса: Милентија Поповића 36 </p>">Контакт</a></li>
+							<li><a href="file:///C:/Users/HP/Desktop/Spartas/blog.html">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		  <section id="slika">
+				<div class="modal fade" id="mojModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+
+								<p>Име:</p>
+							
+								<input type="text" class="polje"></input>
+							
+								<p>Адреса електронске поште:</p>
+								
+								<input type="text" class="polje"></input>
+								
+								<p>Порука:</p>
+							
+								<textarea  rows= "4" class="polje"></textarea>
+								<br> 		<br>
+								<button type="button" id="modalDugme"class="btn btn-default" data-dismiss="modal">Пошаљи</button>
+								<br><br>	
+								<button type="button" id="modalDugme"class="btn btn-default" data-dismiss="modal">Затвори</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="naslov">
+						<h1><strong>Постани најбоља</strong></h1>
+						<h1> <strong>верзија себе.</strong></h1>
+						<button id="dugmeClanstvo" type="button" data-toggle='modal' data-target='#clanstvoModal'>
+							<strong>Учлани се!</strong>
+						</button>
+					</div>
+					<div class="modal fade" id="clanstvoModal" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+		
+											<p>Име:</p>
+							
+											<input type="text" class="polje"></input>
+										
+											<p>Презиме:</p>
+											
+											<input type="text" class="polje"></input>
+											
+											<p>Годиште:</p>
+										
+											<input type="number" class="polje"></input>
+
+											<p>Пол:</p>
+											
+											<input type="text" class="polje"></input>
+
+											<p>Адреса електронске поште:</p>
+											
+											<input type="text" class="polje"></input>
+										<br><br>	
+										<button type="button" id="modalDugme"class="btn btn-default" data-dismiss="modal">Пошаљи</button>
+								<br><br>
+										<button type="button" id="modalDugme"class="btn btn-default" data-dismiss="modal">Затвори</button>
+									</div>
+								</div>
+							</div>
+						</div>
+		  </section>
+		</header>
+		<section id="trojka" class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="well text-center">
+						<svg version="1.1"  xmlns:svg="http://www.w3.org/2000/svg" id="srce"
+				 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="25 128.9 645 585"
+	 			 style="enable-background:new 25 128.9 645 585;" xml:space="preserve">
+
+								<g id="layer1">
+					<path id="path2417" class="st0" d="M322.3,679.8c-13.8-15.4-48.2-45.5-76.4-66.9c-83.7-63.2-95.1-72.4-129.1-103.7
+					C54,451.5,27.4,393.5,27.5,314.8c0-38.4,2.7-53.2,13.4-75.8c18.2-38.4,45.1-66.9,79.4-84.4c24.3-12.4,36.3-17.8,76.9-18.1
+					c42.5-0.2,51.4,4.7,76.4,18.5c30.4,16.7,61.7,52.4,68.2,77.8l4,15.7l9.9-21.6c55.7-122,233.6-120.1,295.5,3
+					c19.6,39.1,21.8,122.5,4.4,169.5c-22.7,61.3-65.4,108.1-164,179.7c-64.7,47-137.9,118-143,128C342.8,718.8,348.4,709,322.3,679.8z"
+					/>
+								<g id="g2221" transform="translate(129.28571,-64.285714)">
+								</g>
+								</g>
+						</svg>
+						<br><br>
+						<p> Стало нам је до вашег срца или штагод</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="well text-center">
+						<svg version="1.1" id="sat" xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="25 128.9 645 585"
+					style="enable-background:new 25 128.9 645 585;" xml:space="preserve">
+
+						<circle class="st5" cx="347.5" cy="421.4" r="274.4"/>
+						<g>
+							<line class="st4" x1="347.5" y1="421.4" x2="347.5" y2="255.4"/>
+							<line class="st5" id="valjda" x1="347.5" y1="587.4" x2="347.5" y2="421.4"/>
+						</g>
+						<line class="st5" x1="347.5" y1="421.4" x2="347.5" y2="255.4"/>
+						</svg>
+						<br><br>
+						<p>Задржите се што је краће могуће</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="well text-center">
+						<svg id="sunce" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+						 <g fill="#FFD700"><path d="m20.5 59.7l7-7.2c-2.5-.5-4.8-1.5-6.9-2.9l-.1 10.1"/>
+						  <path d="m43.5 4.3l-7 7.2c2.5.5 4.8 1.5 6.9 2.9l.1-10.1"/>
+						  <path d="m4.3 43.5l10.1-.1c-1.4-2.1-2.4-4.4-2.9-6.9l-7.2 7"/>
+						  <path d="m59.7 20.5l-10.1.1c1.3 2.1 2.3 4.4 2.9 6.9l7.2-7"/>
+						  <path d="m4.3 20.5l7.2 7c.5-2.5 1.5-4.8 2.9-6.9l-10.1-.1"/>
+						  <path d="m59.7 43.5l-7.2-7c-.5 2.5-1.5 4.8-2.9 6.9l10.1.1"/>
+						  <path d="m20.5 4.3l.1 10.1c2.1-1.3 4.4-2.3 6.9-2.9l-7-7.2"/>
+						  <path d="m43.5 59.7l-.1-10.1c-2.1 1.4-4.4 2.4-6.9 2.9l7 7.2"/>
+						</g><g fill="#FFD700">
+							<path d="m14.8 44l-4 9.3 9.3-4c-2.1-1.5-3.9-3.3-5.3-5.3"/>
+							<path d="m49.2 20l4-9.3-9.2 4c2 1.5 3.8 3.3 5.2 5.3"/>
+							<path d="m11.4 28.3l-9.4 3.7 9.4 3.7c-.3-1.2-.4-2.4-.4-3.7s.1-2.5.4-3.7"/>
+							<path d="m52.6 35.7l9.4-3.7-9.4-3.7c.2 1.2.4 2.5.4 3.7 0 1.3-.1 2.5-.4 3.7"/>
+							<path d="m20 14.8l-9.3-4 4 9.3c1.5-2.1 3.3-3.9 5.3-5.3"/>
+							<path d="m44 49.2l9.3 4-4-9.3c-1.5 2.1-3.3 3.9-5.3 5.3"/>
+							<path d="m35.7 11.4l-3.7-9.4-3.7 9.4c1.2-.2 2.5-.4 3.7-.4s2.5.1 3.7.4"/>
+							<path d="m28.3 52.6l3.7 9.4 3.7-9.4c-1.2.3-2.4.4-3.7.4s-2.5-.1-3.7-.4"/>
+							<circle cx="32" cy="32" r="19"/></g></svg>
+							
+						<br><br>
+						<p>Биће вам жао на плажи што се нисте учланили</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="map">
+			<script type="text/javascript">
+				var map = L.map('map',{
+					scrollWheelZoom: false
+					
+					});
+				map.setView([44.81667,20.46667], 15);
+				var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+ 					 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+				});
+				layer.addTo(map);
+
+				var marker = L.marker([44.81667,20.46667]);
+				marker.addTo(map);
+			</script>
+		</div>
+		<section class="container">
+			<div class="row justify-content-center" id="opis">
+				<div class="well">
+					<h3>О нама</h3>
+					<br>
+					<p>Теретана Спартас је почела са радом 10. септембра 2019. године. Од тада је услужила више од двоје људи и обојица су постали оно као баш много напуцани. Јако смо посвећени нашим клијентима. Руку на срце имамо и времена да будемо када их баш и нема. Али када би их било видели би како смо професионални и добри у свом послу. Можете да видите и наше
+					 <span data-toggle="collapse" data-target="#slike" id="slikeDugme"><b style="font-size: 1.05em">слике</b></span>. </p>
+				</div>
+			</div>
+		</section>
+		<div class="container class collapse" id="slike">
+			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner">
+			      <div class="item active">
+			        <img src=" https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"  style="width:100%;">
+			       
+			      </div>
+
+			      <div class="item">
+			        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="width:100%;">
+			      </div>
+			    
+			      <div class="item">
+			        <img src="https://images.unsplash.com/photo-1561214078-f3247647fc5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"  style="width:100%;">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" style="color: white"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+		</div>
+		<footer>
+				<a href="" class="ikonica"><i class="fab fa-facebook-f fa-2x"></i></a>
+				<a href="#" class="ikonica"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="#" class="ikonica"><i class="fab fa-linkedin-in fa-2x"></i></a>
+				<a href="#" class="ikonica"><i class="fab fa-instagram fa-2x"></i></a>
+				<a href="#" class="ikonica"><i class="fab fa-youtube fa-2x"></i></a>
+			</footer>
+	</body>
+</html>

@@ -1,0 +1,349 @@
+
+
+			.navbar{
+				background-color: #FFD700;
+				border: 0;
+				padding: 1% 0;
+				margin-bottom: 0;
+				margin-right: 20px;
+				border-radius: 0;
+				color: black;
+				font-size: 1.2em;
+                font-family: 'Fira Sans', sans-serif;
+				width: 100%;
+
+			}
+
+			a{
+				color: black;
+            }
+            
+            button{
+                outline: none;
+            }
+
+			.navbar-toggle{
+				background-image: url(C:/Users/HP/Desktop/Spartas/Resursi/ikona.png);
+				width: 40px;
+				height: 40px;
+				background-size: contain;
+				z-index: 999;
+
+			}
+
+
+
+			#logo{
+				color: black;
+				float: left;
+				padding: 15px 0 0 30px;
+				font-size: 1.8em;
+				font-weight: bolder;
+				font-family: 'Myriad-pro', sans-serif;
+
+			}
+
+			#logo:hover{
+				font-size: 1.9em;
+			}	
+
+		 	.navbar-default .navbar-nav li a{
+ 			color: black;
+ 			font-weight: bold;
+ 			font-size: 1.2em;
+			 z-index: 999;
+ 		}
+
+ 		.navbar-default .navbar-nav li a:hover{
+ 			color: black;
+ 			font-weight: bold;
+ 			font-size: 1.3em;
+
+ 		}
+
+ 
+
+ 		#slika{
+             background-color: #1C1C1C;
+ 			background-image: url(C:/Users/HP/Desktop/Spartas/Resursi/teretana3.jpg);
+ 			background-size: cover;
+ 			height: 70vh;
+ 			width: 100%;
+            overflow: hidden;
+            -webkit-animation-name: pojavljivanjeSlike; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+            animation-name: pojavljivanjeSlike;
+            animation-timing-function: cubic-bezier(.65,-0.03,.15,.82);
+            animation-duration: 2;
+
+         }
+         
+         /* Safari 4.0 - 8.0 */
+         @-webkit-keyframes pojavljivanjeSlike {
+            from {opacity: 0;}
+            to {opaciity: 100%;}
+         }
+  
+  /* Standard syntax */
+          @keyframes pojavljivanjeSlike {
+            from {opacity: 0;}
+            to {opaciity: 100%;}
+            }
+
+
+ 		#trojka{
+ 			background-color: #1C1C1C;
+ 			width: 100%;
+ 			padding: 5% 10% 5% 0%;
+
+ 		}
+
+ 				.row .col-sm-3 .well{
+ 			color: white;
+ 			background-color: #2E2E2E;
+
+
+ 			border-color: transparent;
+ 			font-size: 1.3em;
+			font-family: 'Fira Sans', sans-serif;
+			border-radius: 15px;
+ 		}
+
+ 		.material-icons{
+ 			color: #FFD700;
+ 			font-size: 100px;
+ 		}
+
+			footer{
+				background-color: #FFD700;
+				width: 100%;
+				height: 50px;
+				margin: 0;
+				padding-top: 1%;
+			}
+
+			#opis{
+				padding: 5% 10% 4% 8%;
+			}
+
+			.row .well{
+				color: white;
+ 			background-color: #2E2E2E;
+			 -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,238,49,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,238,49,0);
+ 			border-color: transparent;
+ 			font-size: 1.3em;
+			font-family: 'Fira Sans', sans-serif;
+			border-radius: 15px;
+
+			}
+
+			.container{
+								background-color:  #1C1C1C;
+								width: 100%;
+
+			}
+
+			#slikeDugme{
+				color: #FFD700;
+			}
+
+			#slikeDugme:hover{
+				cursor: pointer;
+			}
+
+			header{
+				background-color: #2E2E2E
+			}
+
+			.popover{
+				color: white;
+				background-color: #2E2E2E;
+				text-align: center;
+				font-family: 'Fira Sans', sans-serif;
+				z-index: 900;
+			
+			}
+		
+		#mejl:hover{
+			font-style: italic;
+			cursor: pointer;
+		}
+
+		.modal-content{
+			color: white;
+				background-color: #2E2E2E;
+				text-align: center;
+				font-family: 'Fira Sans', sans-serif;
+				z-index: 999;
+				width: 350px;
+			    overflow: hidden;
+		}
+
+		#modalDugme{
+			background-color: #FFD700;
+			text-align: center;
+				font-family: 'Fira Sans', sans-serif;
+				width: 100%;
+				color: black;
+		}
+
+		.polje{
+			margin: 3% 0 7% 0;
+			width: 100%;
+			border-radius: 5px;
+			color: black;
+		}
+
+		.ikonica{
+			float: left;
+			padding-left: 14vw;
+		}
+
+		.ikonica:hover{
+			font-size: 1.1em;
+			color: black;
+		}
+
+		h1{
+			font-size: 480%;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+		#naslov{
+			color: white; 
+			padding: 3% 0 0 5%;
+			transform: rotate(-12deg);
+			z-index: -100;
+		
+		}
+
+		#map{
+			width: 100%;
+			height: 400px;
+			border-top: 4px solid #FFD700;
+			border-bottom: 4px solid #FFD700;
+        }
+        
+        #dugmeClanstvo{
+            margin: 3% 0 0% 53%;
+            color: black;
+            background-color: #FFD700;
+            border-radius: 5px; 
+            border: none;
+            padding: 2%;
+            text-align: center;
+            font-size: 20px;
+            -webkit-box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.93);
+            -moz-box-shadow:    7px 7px 13px 0px rgba(50, 50, 50, 0.93);
+            box-shadow:         7px 7px 13px 0px rgba(50, 50, 50, 0.93);
+
+
+        }
+
+        #dugmeClanstvo:hover{
+            margin: 2.80% 0% 0% 52.5%;
+            font-size: 22px;
+		}
+		
+		.st0{
+			fill:#FFD700;
+
+		}
+		#srce{
+			height: 100px;
+			-webkit-animation-name: srce; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+			animation-name: srce;
+			animation-duration: .5s;
+			animation-iteration-count: infinite;
+
+		}
+
+
+
+		@-webkit-keyframes srce {
+			from {margin-left: 0px;}
+			to {margin-left: -6px;}
+		  }
+		  
+		  /* Standard syntax */
+		  @keyframes srce {
+			from {margin-left: 0px;}
+			to {margin-left: -6px;}
+		  }
+	
+		  #sunce{
+			height: 100px;
+			-webkit-animation-name: sunce; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+			animation-name: sunce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+
+		  }
+
+
+		  .st2{fill:none;stroke:#FFD700;stroke-width:30;stroke-miterlimit:10;}
+		  .st1{fill:#FFD700;}
+
+		  @-webkit-keyframes sunce {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(180deg);}
+		  }
+		  
+		  /* Standard syntax */
+		  @keyframes sunce {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(180deg);}
+		  }
+
+		  .st5{
+			  
+			fill:none;stroke:#FFD700;stroke-width:30;stroke-miterlimit:10;
+			
+		
+		}
+	.st4{fill:none;stroke:#2E2E2E;stroke-width:30;stroke-miterlimit:10;
+		
+	}
+
+
+  
+	#sat{
+		height: 100px;
+		
+
+	  }
+
+	  #sat:hover{
+		-webkit-animation-name: sat; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+		animation-name: sat;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	  }
+
+	  @-webkit-keyframes sat {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(5deg);}
+	  }
+	  
+	  /* Standard syntax */
+	  @keyframes sat {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(350deg);}
+	  }
+
+		@media only screen and (max-width: 767px){
+			#trojka
+			{
+
+			     
+	 			padding: 5% 5% 5% 5%;
+
+ 		    }
+
+			
+		}

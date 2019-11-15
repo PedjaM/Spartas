@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background: #1C1C1C url(C:/Users/HP/Desktop/Spartas/Resursi/tegovi.png);
+    background-size: repeat;
+}
+
+.sredisnjiDeo{
+    color: white;
+    text-align: justify;
+    word-wrap: break-word;
+    background: #1a1a1a;
+    padding: 5vw;
+    width: 70vw;
+    font-family: 'Fira Sans', sans-serif;
+    margin: auto;
+    z-index: -999;
+    margin-bottom: 50px;
+    border: 8px solid black;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.46);
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h3{
+ font-size: 2em;
+}
+
+svg{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: -75px;
+    height: 150px;
+    z-index: 999;
+    
+}
+
+#dugmePreskoci{
+    outline: none;
+    color: white;
+    background-color: #262626;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+#dugmePreskoci:hover{
+    cursor: pointer;
+}
+
+#slika{
+    background:url(C:/Users/HP/Desktop/Spartas/Resursi/oblaci.jpg);
+    background-size: cover;
+    height: 200px;
+    border-bottom: 8px solid black;
+    z-index: -999;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1)
+
+}
+
+
+
